@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { auth, signInWithGoogle } from "../../firebase/utils";
 import Buttons from "../Forms/Buttons";
 import "./styles.scss";
@@ -55,6 +56,9 @@ function SignIn() {
               </div>
             </div>
           </form>
+          <div className="links">
+            <Link to="/recovery">Reset password</Link>
+          </div>
         </div>
       </div>
     </div>

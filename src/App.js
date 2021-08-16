@@ -7,6 +7,7 @@ import "./default.scss";
 import { auth, handleUserProfile } from "./firebase/utils";
 import HomePage from "./pages/HomePage";
 import Login from "./pages/Login";
+import Recovery from "./pages/Recovery";
 import Registration from "./pages/Registration";
 const App=()=> {
   //auth olduqda
@@ -56,6 +57,7 @@ const App=()=> {
             {/* eger login olubsa ana sehifye qayitmasi ucun redirect */}
             {initialState.currentUser ? <Redirect to="/" /> : <Login />}
           </Route>
+          <Route path="/recovery" component={Recovery}/>
         </Switch>
       </div>
 

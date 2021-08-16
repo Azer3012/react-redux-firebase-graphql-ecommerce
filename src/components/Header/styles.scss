@@ -1,0 +1,39 @@
+.header{
+    height: 6.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    .wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        max-width: 1450px;
+        margin: 0 auto;
+        .logo{
+            width: 10rem;
+            margin-left: 10px;
+            
+            
+            img{
+                width: 100%;
+
+            }
+        }
+        .register-login{
+            margin-right: 10px;
+            ul{
+                list-style: none;
+                display: flex;
+                
+                li{
+                    margin-right: 10px;
+                    a{
+                        font-size: 1.8rem;
+                        color: black;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
